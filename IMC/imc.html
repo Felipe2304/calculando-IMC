@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/IMC/reset.css" />
+    <link rel="stylesheet" href="/IMC/imc.css" />
+    <title>IMC</title>
+  </head>
+  <body>
+    <section class="conteiner">
+      <header class="titulo">
+        <h1 class="titulo-principal">imc</h1>
+        <span class="trecho-saudações">Seja bem vindo !</span>
+      </header>
+      <img
+        src="/IMC/img/imc.jpg"
+        alt="imagem representativa de uma pessoa tirando suas medidas "
+        class="imagem-principal"
+      />
+
+      <h2 class="sub-titulo">
+        O que é <strong class="sigla-destaque">imc</strong>?
+      </h2>
+      <div class="caixa-textos-informativos">
+        <div class="informações">
+          <p class="texto-interrogativo">
+            IMC é a sigla para Índice de Massa Corporal,que é um cálculo que
+            serve para avaliar se a pessoa está dentro do seu peso ideal em
+            relação à altura. Assim, de acordo com o valor do resultado de IMC,
+            a pessoa pode saber se está dentro do peso ideal, acima ou abaixo do
+            peso desejado. Estar dentro do peso certo é importante porque estar
+            acima ou abaixo desse peso pode influenciar bastante a saúde,
+            aumentando o risco de doenças como desnutrição quando se está abaixo
+            do peso, e AVC ou infarto, quando se está acima do peso. Assim, é
+            comum os médicos, enfermeiros e nutricionistas avaliem o IMC da
+            pessoa nas consultas de rotina para verificar a possibilidade de
+            doenças que a pessoa pode estar pre-disposta.
+          </p>
+
+          <h3 class="sub-titulo">Como é calculado ?</h3>
+
+          <p class="texto-interrogativo">
+            IMC = Peso dividido pela altura ao quadrado ( peso/altura²) ; ou
+            peso dividido pela a altura vezes a altura ( peso ÷ (altura x
+            altura)). A forma mais fácil de calcular o IMC é resolver primeiro o
+            que está entre parênteses: ( altura X altura ) e após dividir pelo
+            peso.
+          </p>
+
+          <h3 class="sub-titulo">
+            Veja na tabela abaixo os índices e classificações
+          </h3>
+
+          <img src="/IMC/img/tabela.jpeg" alt="" class="imagem-tabela" />
+
+          <h3 class="sub-titulo">
+            Calcule seu <strong class="sigla-destaque">imc</strong> preenchendo
+            as informações abaixo
+          </h3>
+          <div class="preenchimento-de-dados">
+
+            <label for="nome" class="rotulo-dados"
+              >DIgite seu nome: <input type="text " id="nome" class="dados"
+            /></label>
+
+            <label for="altura" class="rotulo-dados"
+              >Digite sua altura:
+              <input type="number" id="altura" class="dados" />
+            </label>
+
+            <label for="peso" class="rotulo-dados"
+              >Digite seu peso: <input type="number" id="peso" class="dados" />
+            </label>
+            
+            <button class="  botão-calcular">Calcular</button>
+           
+            <div class="resultado"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/IMC/imc.js"></script>
+</html>

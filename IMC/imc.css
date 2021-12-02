@@ -1,0 +1,132 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  height: 100vh;
+  max-width: 1366px;
+  bottom: 20%;
+}
+
+.titulo {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  
+  background-color: #067affea;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.titulo-principal {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: start;
+  margin-left: 10%;
+  font-weight: 900;
+}
+.trecho-saudações{
+  position: relative;
+  left: 900px;
+}
+
+.sub-titulo {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #067affea;
+}
+.sigla-destaque {
+  text-transform: uppercase;
+}
+.imagem-principal {
+  height: 60%;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 20px solid #067affea;
+}
+.imagem-tabela {
+  width: 350px;
+  margin-bottom: 50px;
+}
+.caixa-textos-informativos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.informações {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #067affea;
+  border-left: 1px solid #067affea;
+  padding: 15px;
+}
+
+.texto-interrogativo {
+  margin-bottom: 20px;
+  color: #797d7f;
+}
+
+.preenchimento-de-dados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  border-radius: 10px 10px 0 0;
+  background-color: #067affea;
+}
+.dados {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+.dados:focus {
+  border: 1px solid #797d7f;
+  box-shadow: 2px 5px 5px #ffffff;
+}
+.rotulo-dados {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.botão-calcular {
+  height: 40px;
+  width: 150px;
+  position: relative;
+  left: 350px;
+  bottom: 20px;
+  background-color: #ffffff;
+  color: #067affea;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  transition-duration: 300ms;
+  margin-bottom: 15px;
+}
+
+.botão-calcular:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+
+.resultado{
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
