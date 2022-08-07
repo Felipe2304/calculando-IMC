@@ -1,14 +1,14 @@
 let $botaocalcular = document.querySelector(".botão-calcular");
 let $resultado = document.querySelector(".resultado");
+let $altura = document.querySelector("#altura");
+let $peso = document.querySelector("#peso");
+let $nome = document.querySelector("#nome");
 
 const calcularImc = (peso, altura) => {
   return peso / (altura * altura);
 };
 
 const verificarDados = () => {
-  
-  let $altura = document.querySelector("#altura");
-  let $peso = document.querySelector("#peso");
   let imc = calcularImc($peso.value, $altura.value);
   let imcCalculado = Number(imc.toFixed(1));
 
@@ -16,7 +16,6 @@ const verificarDados = () => {
 };
 
 const classificacaoImc = () => {
-  let $nome = document.querySelector("#nome");
   let nomeValor = $nome.value;
   let imcCalculado = verificarDados();
 
@@ -35,8 +34,20 @@ const classificacaoImc = () => {
   }
 };
 
+const removerResultado = () => {
+  setTimeout(() => {
+    $resultado.textContent = "";
+  }, 4000);
+};
+
+const removerValorDoInput = () => {
+  $altura.value = "";
+  $peso.value = "";
+  $nome.value = "";
+};
+
 $botaocalcular.addEventListener("click", function () {
   classificacaoImc();
+  removerResultado();
+  removerValorDoInput();
 });
-
-
